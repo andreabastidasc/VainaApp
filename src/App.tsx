@@ -1,11 +1,10 @@
-import './App.css'
 import { useTranslation } from 'react-i18next'
 
 
 export default function App() {
   const { t, i18n } = useTranslation()
 
-  return (
+    return (
         <div className="min-h-screen bg-sky-50 p-6">
             <div className="flex justify-end gap-2 mb-6">
                 {['es', 'en', 'fr', 'pt'].map((lng) => (
@@ -28,5 +27,5 @@ export default function App() {
                 <li>{ t('sentence1') }</li>
             </ul>
         </div>
-  )
+    )
 }
