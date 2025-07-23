@@ -1,18 +1,18 @@
 export type Meaning = {
-  id: string
-  label: string
-  definitions: {
-    es: string
-    en: string
-    fr: string
-    pt: string
-  }
-  examples: {
-    es: string[]
-    en: string[]
-    fr: string[]
-    pt: string[]
-  }
+    id: string
+    label: string
+    definitions: {
+        es: string
+        en: string
+        fr: string
+        pt: string
+    }
+    examples: {
+        es: string[]
+        en: string[]
+        fr: string[]
+        pt: string[]
+    }
 }
 
 export const meanings: Meaning[] = [
