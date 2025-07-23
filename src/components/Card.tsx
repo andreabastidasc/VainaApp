@@ -16,7 +16,7 @@ export default function Card({
     const lang = i18n.language as 'es' | 'en' | 'fr' | 'pt'
 
     return (
-        <div className="bg-yellow-400 text-black p-8 rounded-3xl shadow-xl max-w-xl mx-auto md:mt-32 md:mb-20 mt-16 mb-28 relative min-h-[400px] md:min-h-[400px] h-screen md:h-auto">
+        <div className="bg-yellow-400 text-black p-8 rounded-3xl shadow-xl max-w-xl md:mt-32 md:mb-20 mt-16 mb-28 relative min-h-[400px] md:min-h-[600px] max-h-[600px] h-[80vh] w-[350px] md:h-auto">
             <h1 className="text-5xl font-extrabold mb-2">{ t('word') }</h1>
             <h2 className="text-lg italic font-medium text-gray-800 mb-4">{meaning.label}</h2>
             <p className="text-base mb-4">{ meaning.definitions[lang] }</p>
