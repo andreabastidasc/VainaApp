@@ -1,5 +1,6 @@
 import { ArrowPathIcon } from '@heroicons/react/24/outline'
 import { useTranslation } from 'react-i18next'
+
 import type { Meaning } from '../types/Meanings'
 
 

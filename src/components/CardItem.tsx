@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import CardContent from './CardContent'
 import type { Meaning } from '../types/Meanings'
 
+
 const OFFSET_X = 12
 const SCALE_FACTOR = 0.04
 

@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import move from 'lodash-move'
 
-import LanguageSwitcher from './components/LanguageSwitcher'
-import CardStack from './components/CardStack'
 import { meanings } from './data/entries'
+import CardStack from './components/CardStack'
+import LanguageSwitcher from './components/LanguageSwitcher'
+
 
 const CARD_COLORS = ['#facc15', '#4ade80', '#a78bfa']
-
 
 export default function App() {
     const initialCards = meanings.map((meaning, i) => ({
