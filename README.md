@@ -1,9 +1,10 @@
-
 # VainaApp
 
-**VainaApp** es una aplicación interactiva hecha con React y Vite que explora todos los significados posibles de la palabra “vaina”, especialmente en el contexto del español venezolano y latinoamericano. Presenta tarjetas animadas que rotan en un stack para mostrar diferentes definiciones y ejemplos de uso, en múltiples idiomas.
+**VainaApp** es una app hecha con React y Vite, creada por una venezolana que sabe bien que “vaina” no es solo una palabra… ¡es un estilo de vida!
+Desde una cosa sin nombre hasta un problema serio, desde un susto hasta una simple excusa, esta app te lleva por todos los significados posibles de esa joya del español venezolano y latinoamericano.
 
-**VainaApp** is an interactive React + Vite app that explores all the possible meanings of the word “vaina”, especially in Venezuelan and Latin American Spanish. It features animated cards rotating in a stack to display different definitions and usage examples in multiple languages.
+**VainaApp**  is a fun React + Vite app made by a Venezuelan who knows that "vaina" isn’t just a word—it’s a whole lifestyle.
+From nameless objects to serious trouble, near-misses to random nonsense, this app breaks down every possible meaning of this Latin American gem.
 
 ---
 
@@ -11,12 +12,16 @@
 
 - 🗂️ Tarjetas animadas con definiciones y ejemplos reales.  
   🗂️ Animated cards with real definitions and usage examples.
+
 - 🌍 Soporte multilingüe (Español, Inglés, Francés, Portugués).  
   🌍 Multilingual support (Spanish, English, French, Portuguese).
+
 - 💡 Interfaz tipo “swipe stack” con animaciones suaves usando Framer Motion.  
   💡 Swipe-stack style UI with smooth animations using Framer Motion.
+
 - 🎨 Estilizado moderno con Tailwind CSS.  
   🎨 Modern styling with Tailwind CSS.
+
 - 🔁 Navegación infinita con lógica de rotación usando `lodash-move`.  
   🔁 Infinite navigation with card rotation logic using `lodash-move`.
 
@@ -62,27 +67,11 @@ npm run lint       # Linter con ESLint / Run ESLint
 
 ---
 
-## 🌍 Traducciones / Translations
-
-Los textos se manejan mediante archivos JSON de traducción por idioma, usando la librería `i18next`. Puedes agregar más idiomas fácilmente desde la carpeta `locales/`.
-
-Text is managed via language-specific translation JSON files, using `i18next`. You can easily add more languages in the `locales/` folder.
-
----
-
-## 🎥 Vista previa / Demo
-
-![demo gif o captura]()
-
-> (Podés subir un video o captura a GitHub o un sitio público y enlazarlo acá.)
-
----
-
 ## 🤝 Contribuir / Contributing
 
-¡Contribuciones son bienvenidas! Si tienes más significados o ejemplos de “vaina” en otros dialectos, no dudes en hacer un PR.
+¡Contribuciones son bienvenidas! Si tienes más significados o ejemplos de “vaina” en otros dialectos, por favor no modifiques el código directamente. En cambio, envíame un correo electrónico con tus aportes para que pueda revisarlos y agregarlos yo mismo.
 
-Contributions are welcome! If you have more meanings or regional examples of "vaina", feel free to open a PR.
+Contributions are welcome! If you have more meanings or regional examples of "vaina", please do not modify the code directly. Instead, send me an email with your suggestions so I can review and add them.
 
 ---
 
