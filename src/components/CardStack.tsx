@@ -11,19 +11,19 @@ export default function CardStack({
     onNext 
 }: CardStackProps) {
     return (
-        <div className="relative w-full max-w-[400px] flex items-center justify-center h-[80vh]">
+        <div className="relative w-full max-w-[400px] flex items-center justify-center h-[80vh] pl-2">
             <ul className="relative w-[80%] h-[600px]">
-                {cards.map((card, index) => (
+                { cards.slice(0, 3).map((card, index) => (
                     <CardItem
                         key={ index }
+                        total={ Math.min(3, cards.length) } 
                         cardColor={ card.color }
                         meaning={ card.meaning }
                         index={ index }
-                        total={ cards.length }
                         isFront={ index === 0 }
                         onNext={ onNext }
                     />
-                ))}
+                )) }
             </ul>
         </div>
     )
