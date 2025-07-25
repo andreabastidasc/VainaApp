@@ -5,15 +5,11 @@
         "module": "ESNext",
         "moduleResolution": "bundler",
         "composite": true,
-
-        "jsx": "react-jsx",
         "verbatimModuleSyntax": true,
         "moduleDetection": "force",
-        
+        "jsx": "react-jsx",
         "strict": true,
-        "skipLibCheck": true,
-        "noUnusedLocals": true,
-        "noUnusedParameters": true
+        "skipLibCheck": true
     },
     "include": ["src"]
 }
