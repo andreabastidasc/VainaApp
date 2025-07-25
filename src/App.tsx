@@ -20,8 +20,16 @@ export default function App() {
     }
 
     return (
-        <div className="min-h-screen bg-yellow-300 flex items-center justify-center py-6 relative">
-            <LanguageSwitcher />
+        <div className="h-[100vh] bg-yellow-300 relative flex flex-col justify-center items-center">
+            <div className='flex flex-row items-center justify-between absolute z-20 top-0 w-full rounded-lg shadow-md bg-white/10 backdrop-blur-md px-4 py-2'>
+                <img
+                    src="/vaina.png"
+                    alt="logo"
+                    className="w-auto h-15 lg:h-18 object-contain"
+                />
+                <LanguageSwitcher />
+            </div>
+           
             <CardStack 
                 cards={ cards } 
                 onNext={ handleNext } 

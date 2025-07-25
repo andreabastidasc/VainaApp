@@ -43,7 +43,6 @@ export default function CardItem({
             onDragEnd={ () => isFront && onNext(index) }
             transition={{ type: 'spring', stiffness: 300, damping: 30 }}
             drag={ isFront ? 'y' : false }
-            dragElastic={ 0.2 }
             dragDirectionLock={true}
         >
             <CardContent 
