@@ -1,40 +1,30 @@
 import { useState } from 'react'
-import { useTranslation } from 'react-i18next'
+import move from 'lodash-move'
 
-import Card from './components/Card'
+import LanguageSwitcher from './components/LanguageSwitcher'
+import CardStack from './components/CardStack'
 import { meanings } from './data/entries'
+
+const CARD_COLORS = ['#facc15', '#4ade80', '#a78bfa']
 
 
 export default function App() {
-    const { i18n } = useTranslation()
-    const [current, setCurrent] = useState(() => getRandomMeaning())
+    const initialCards = meanings.map((meaning, i) => ({
+        meaning,
+        color: CARD_COLORS[i % CARD_COLORS.length],
+    }))
+    const [cards, setCards] = useState(initialCards)
 
-    function getRandomMeaning() {
-        return meanings[Math.floor(Math.random() * meanings.length)]
-    }
-
-    function handleNext() {
-        setCurrent(getRandomMeaning())
+    function handleNext(fromIndex: number) {
+        setCards((prev) => move(prev, fromIndex, prev.length - 1))
     }
 
     return (
         <div className="min-h-screen bg-yellow-300 flex items-center justify-center py-6 relative">
-            
-            <div className="flex justify-end gap-2 absolute top-4 right-4 z-10">
-                { ['es', 'en', 'fr', 'pt'].map((lng) => (
-                    <button
-                        key={ lng }
-                        onClick={ () => i18n.changeLanguage(lng) }
-                        className="bg-white px-3 py-1 rounded shadow text-sm hover:bg-gray-100"
-                    >
-                        { lng.toUpperCase() }
-                    </button>
-                )) }
-            </div>
-
-            <Card 
-                meaning={ current } 
-                onNextClick={ handleNext } 
+            <LanguageSwitcher />
+            <CardStack 
+                cards={ cards } 
+                onNext={ handleNext } 
             />
         </div>
     )
