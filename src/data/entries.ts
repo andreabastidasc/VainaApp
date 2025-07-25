@@ -1,24 +1,14 @@
-export type Meaning = {
-    id: string
-    label: string
-    definitions: {
-        es: string
-        en: string
-        fr: string
-        pt: string
-    }
-    examples: {
-        es: string[]
-        en: string[]
-        fr: string[]
-        pt: string[]
-    }
-}
+import type { Meaning } from "../types/Meanings"
 
 export const meanings: Meaning[] = [
     {
         id: 'objeto',
-        label: 'Objeto / Cosa',
+        label: {
+            es: 'Objeto / Cosa',
+            en: 'Object / Thing',
+            fr: 'Objet / Chose',
+            pt: 'Objeto / Coisa'
+        },
         definitions: {
             es: 'Cosa u objeto indefinido o genérico.',
             en: 'Thing or object (generic)',
@@ -34,7 +24,12 @@ export const meanings: Meaning[] = [
     },
     {
         id: 'problema',
-        label: 'Problema / Complicación',
+        label: {
+            es: 'Problema / Complicación',
+            en: 'Problem / Trouble',
+            fr: 'Problème / Galère',
+            pt: 'Problema / Confusão'
+        },
         definitions: {
             es: 'Situación incómoda o conflictiva.',
             en: 'Problem or trouble.',
@@ -50,7 +45,12 @@ export const meanings: Meaning[] = [
     },
     {
         id: 'tema',
-        label: 'Tema / Asunto',
+        label: {
+            es: 'Tema / Asunto',
+            en: 'Topic / Matter',
+            fr: 'Sujet / Affaire',
+            pt: 'Tema / Assunto'
+        },
         definitions: {
             es: 'Asunto, cosa que se discute o trata.',
             en: 'Subject or matter being discussed.',
