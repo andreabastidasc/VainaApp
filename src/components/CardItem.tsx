@@ -27,7 +27,7 @@ export default function CardItem({
     return (
         <motion.li
             key={ index }
-            className="absolute w-full h-[600px] rounded-3xl shadow-xl p-8"
+            className="absolute w-full h-[100%] rounded-3xl shadow-xl p-8"
             style={{
                 backgroundColor: cardColor,
                 cursor: isFront ? 'grab' : 'default',

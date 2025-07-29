@@ -21,7 +21,7 @@ export default function App() {
 
     return (
         <div className="h-[100vh] bg-yellow-300 relative flex flex-col justify-center items-center">
-            <div className='flex flex-row items-center justify-between absolute z-20 top-0 w-full rounded-lg shadow-md bg-white/10 backdrop-blur-md px-4 py-2'>
+            <div className='flex flex-row items-center justify-between absolute z-20 top-0 w-full rounded-lg shadow-md bg-white/10 backdrop-blur-md px-4 py-2 sm:max-h-[76px] lg:max-h-[88px]'>
                 <img
                     src="/vaina.png"
                     alt="logo"
